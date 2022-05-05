@@ -23,6 +23,7 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.27.2",
+    "brace-expansion": "^2.0.1",
     "colors": "^1.4.0",
     "gluegun": "latest"
   },
