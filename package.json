@@ -1,8 +1,8 @@
 {
-  "name": "highframe",
-  "version": "0.0.1",
+  "name": "highframe-cli",
+  "version": "1.0.0",
   "description": "highframe CLI",
-  "private": true,
+  "private": false,
   "bin": {
     "highframe": "bin/highframe"
   },
