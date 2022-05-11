@@ -1,3 +1,5 @@
+const c = require('colors')
+
 module.exports = {
   name: 'init',
   alias: [''],
@@ -7,10 +9,12 @@ module.exports = {
       template: { generate },
       print: { info },
       prompt,
-      filesystem
+      filesystem: { exists }
     } = toolbox;
     
-    
+    let AlreadyExists = exists('highframe.config.js')
+    if(AlreadyExists) return info(c.red('❌┃Você já inicou a aplicação'))
+
     let authorAsk = { 
       type: 'input',
       name: 'username',

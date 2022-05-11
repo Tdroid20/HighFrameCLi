@@ -21,8 +21,8 @@ module.exports = {
             filesystem: { exists }
           } = toolbox;
 
-          let hasArealyLogin = exists('login.hf.json')
-          if(hasArealyLogin) return info(c.red('❌┃Você já está logado'))
+          let AlreadyLogin = exists('login.hf.json')
+          if(AlreadyLogin) return info(c.red('❌┃Você já está logado'))
 
           let authorAsk = { 
             type: 'input',
